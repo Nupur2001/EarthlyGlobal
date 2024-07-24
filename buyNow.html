@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Payment Page</title>
+	<script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    margin: 0;
+    background-color: #f3efec;
+">
+
+	<nav class="breadcrumbs">
+		<a href="index.html">Home</a>
+		<a href="product.html">Product Details</a>
+		<a href="addToCart.html">Cart Page</a>
+	</nav>
+	<div class="cardContainer">
+		<div class="left">
+			<p>Payment methods</p>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<div class="methods">
+				<div onclick="doFun()" id="tColorA" aria-label="Payment by card"><i class="fa-solid fa-credit-card"></i>
+					Payment by card</div>
+				<div onclick="doFunA()" id="tColorB" aria-label="Internet banks"><i
+						class="fa-solid fa-building-columns"></i> Internet banks</div>
+				<div onclick="doFunB()" id="tColorC" aria-label="Apple/Google pay"><i class="fa-solid fa-wallet"></i>
+					Apple/Google pay</div>
+			</div>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+		</div>
+		<div class="center">
+			<a href="https://www.shift4shop.com/credit-card-logos.html" aria-label="Credit Card Logos">
+				<img alt="Credit Card Logos" title="Credit Card Logos"
+					src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="250" height="auto" />
+			</a>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<div class="card-details">
+				<form>
+					<label for="number">Card number</label>
+					<div class="c-number" id="c-number">
+						<input id="number" class="cc-number" placeholder="Card number" maxlength="19" type="text"
+							required>
+						<i class="fa-solid fa-credit-card" style="margin: 0;"></i>
+					</div>
+					<div class="c-details">
+						<div>
+							<label for="e-date">Expiry date</label>
+							<input id="e-date" class="cc-exp" placeholder="MM/YY" type="text" maxlength="5" required>
+						</div>
+						<div>
+							<label for="cvv">CVV</label>
+							<div class="cvv-box" id="cvv-box">
+								<input id="cvv" class="cc-cvv" placeholder="CVV" type="number" maxlength="3" required>
+								<i class="fa-solid fa-circle-question" title="3 digits on the back of the card"
+									style="cursor: pointer;"></i>
+							</div>
+						</div>
+					</div>
+					<div class="email">
+						<label for="email">Email</label>
+						<input type="email" placeholder="example@email.com" id="email" required>
+					</div>
+					<button  class="btn" type="submit">PAY NOW</button>
+				</form>
+			</div>
+		</div>
+		<div class="right">
+			<p>Order information</p>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<div class="details">
+				<div style="font-weight: bold; padding: 1rem; font-size: 2rem;">Order description</div>
+				<div style="padding: 1rem; font-size: 1.5rem;">Test payment</div>
+			</div>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<a href="https://www.shift4shop.com/credit-card-logos.html" aria-label="Credit Card Logos">
+				<img alt="Credit Card Logos" title="Credit Card Logos"
+					src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="100%" height="auto" />
+			</a>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

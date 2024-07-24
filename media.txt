@@ -1,0 +1,353 @@
+/* For screens wider than 2560px */
+@media only screen and (min-width: 2560px) {
+    .header {
+        padding: 3rem;
+    }
+
+    .header .navbar .btn {
+        padding: 1.5rem;
+    }
+
+    .home .content h2 {
+        line-height: 5rem;
+        font-size: 5rem !important;
+        max-width: 123rem !important;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    .Help {
+        top: 80rem;
+    }
+
+    .header .logo {
+        font-size: 4.5rem;
+    }
+
+    .header .navbar a {
+        font-size: 3.5rem;
+    }
+
+    .home .content .btn {
+        padding: 2.5rem;
+        font-size: 2.5rem;
+    }
+
+    .home .content p {
+        margin-top: 1rem;
+        /* max-width: 248rem; */
+        text-align: justify;
+        font-size: 3rem;
+        max-width: 66rem;
+    }
+
+    .chooseContainer h1,
+    .buyProductContainer h1 {
+        font-size: 6rem;
+    }
+
+    .chooseContainer h2,
+    .buyProductContainer h2 {
+        font-size: 4.5rem;
+    }
+
+    .chooseProduct img,
+    .buyProduct img {
+        height: 45rem;
+        width: 50rem;
+    }
+
+    .chooseProduct p,
+    .buyProduct p {
+        max-width: 115rem;
+        font-size: 3rem;
+    }
+
+    .chooseContainer .btn,
+    .buyProductContainer .btn {
+        margin-top: 0rem;
+        font-size: 3rem;
+        padding: 2rem;
+    }
+
+    .footer {
+        height: 45rem;
+    }
+
+    .footer .logo {
+        height: 12rem;
+    }
+
+    .footer .box-container .box p {
+        font-size: 3rem;
+    }
+
+    .footer .box-container .box .Links a {
+        font-size: 3rem;
+    }
+
+    .credit {
+        font-size: 3rem;
+    }
+
+    .footer .box-container .box h3 {
+        font-size: 3rem;
+    }
+
+    .footer .box-container .box .fPara {
+        max-width: 41rem;
+    }
+
+    .footer .box-container .box .btns {
+        margin-top: -1rem;
+    }
+
+    .footer .box-container .box .btns .btn {
+        border-radius: 0.9rem;
+        padding: 2rem;
+        font-size: 5rem;
+    }
+}
+
+/* For screens between 1024px and 2560px */
+@media only screen and (min-width: 1024px) and (max-width: 2559px) {
+    .header {
+        padding: 2.25rem;
+    }
+
+    /* .header .logo {
+        font-size: 4rem;
+    }
+
+    .header .navbar a{
+        font-size: 3rem;
+    } */
+
+    .header .navbar .btn {
+        padding: 1.25rem;
+    }
+
+    .home .content h2 {
+        line-height: 4.25rem;
+        font-size: 3rem !important;
+        max-width: 110rem !important;
+    }
+
+    .home .content h3 {
+        font-size: 2.9rem;
+        font-weight: 600;
+    }
+
+    .Help {
+        top: 75rem;
+    }
+
+    /* .header .logo {
+        font-size: 4rem;
+    } */
+    /* .header .navbar a {
+        font-size: 3rem;
+    } */
+    .home .content .btn {
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+/* For screens between 415px and 1023px */
+@media only screen and (min-width: 415px) and (max-width: 1023px) {
+    .header {
+        padding: 1.75rem;
+    }
+
+    .header .navbar .btn {
+        padding: 0.75rem;
+    }
+
+    .home .content h2 {
+        line-height: 3.75rem;
+        font-size: 3.75rem !important;
+        max-width: 85rem !important;
+    }
+
+    .home .content h3 {
+        font-size: 2.75rem;
+        font-weight: 550;
+    }
+
+    .Help {
+        top: 55rem;
+    }
+
+    .header .logo {
+        font-size: 2.75rem;
+    }
+
+    .header .navbar a {
+        font-size: 2.25rem;
+    }
+
+    .home .content .btn {
+        padding: 1.75rem;
+        font-size: 1.75rem;
+    }
+}
+
+/* For iPad Pro (1024px by 1366px) */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .header {
+        padding: 2.5rem;
+    }
+
+    .header .navbar .btn {
+        padding: 1.25rem;
+    }
+
+    .home .content h2 {
+        line-height: 4.5rem;
+        font-size: 4.5rem !important;
+        max-width: 100rem !important;
+    }
+
+    .home .content h3 {
+        font-size: 3.5rem;
+        font-weight: 650;
+    }
+
+    .Help {
+        top: 70rem;
+    }
+
+    .header .logo {
+        font-size: 3.5rem;
+    }
+
+    .header .navbar a {
+        font-size: 3rem;
+    }
+
+    .home .content .btn {
+        padding: 2.25rem;
+        font-size: 2.25rem;
+    }
+}
+
+/* For iPhone XS Max (414px by 896px) */
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+    .header {
+        padding: 2rem;
+    }
+
+    .header .navbar .btn {
+        padding: 1rem;
+    }
+
+    .home .content h2 {
+        line-height: 4rem;
+        font-size: 4rem !important;
+        max-width: 90rem !important;
+    }
+
+    .home .content h3 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .Help {
+        top: 60rem;
+    }
+
+    .header .logo {
+        font-size: 3rem;
+    }
+
+    .header .navbar a {
+        font-size: 2.5rem;
+    }
+
+    .home .content .btn {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+}
+
+/* For iPhone X (375px by 812px) */
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+    .header {
+        padding: 1.5rem;
+    }
+
+    .header .navbar .btn {
+        padding: 0.75rem;
+    }
+
+    .home .content h2 {
+        line-height: 3.5rem;
+        font-size: 3.5rem !important;
+        max-width: 80rem !important;
+    }
+
+    .home .content h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .Help {
+        top: 50rem;
+    }
+
+    .header .logo {
+        font-size: 2.5rem;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+    }
+
+    .home .content .btn {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* For smaller screens (width less than 414px) */
+@media only screen and (max-width: 413px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .header .navbar .btn {
+        padding: 0.5rem;
+    }
+
+    .home .content h2 {
+        line-height: 3rem;
+        font-size: 3rem !important;
+        max-width: 70rem !important;
+    }
+
+    .home .content h3 {
+        font-size: 2rem;
+        font-weight: 450;
+    }
+
+    .Help {
+        top: 40rem;
+    }
+
+    .header .logo {
+        font-size: 2rem;
+    }
+
+    .header .navbar a {
+        font-size: 1.5rem;
+    }
+
+    .home .content .btn {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

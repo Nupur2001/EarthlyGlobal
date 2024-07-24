@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <style>
+        /* Resetting some default styles */
+        body, h1, button, input {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px; /* Setting the base font size */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 0.625rem;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+            max-width: 25rem;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            color: #333333;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            border: none;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border-radius: 0.3125rem;
+            cursor: pointer;
+            font-size: 1.125rem;
+            transition: background-color 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .otp-display {
+            margin-top: 2rem;
+            font-size: 1.75rem;
+            color: #4CAF50;
+            font-weight: bold;
+            border: 0.125rem dashed #4CAF50;
+            padding: 1rem;
+            border-radius: 0.3125rem;
+            background-color: #f9f9f9;
+            transition: transform 0.3s ease;
+        }
+
+        .otp-display:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            padding: 0.5rem;
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            border: 0.125rem solid #ccc;
+            border-radius: 0.3125rem;
+            width: calc(100% - 1rem);
+            max-width: 20rem;
+        }
+
+        .verification-result {
+            margin-top: 1rem;
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OTP Generator</h1>
+        <button id="generateOtpBtn">Generate OTP</button>
+        <div id="otpDisplay" class="otp-display"></div>
+    </div>
+    <div class="container">
+        <h1>OTP Verification</h1>
+        <form id="otpForm">
+            <input type="text" id="otpInput" placeholder="Enter OTP">
+            <button type="submit">Verify OTP</button>
+            <div id="verificationResult" class="verification-result"></div>
+        </form>
+    </div>
+    <script>
+        let generatedOtp;
+
+        document.getElementById('generateOtpBtn').addEventListener('click', generateOtp);
+        document.getElementById('otpForm').addEventListener('submit', verifyOtp);
+
+        function generateOtp() {
+            // Generate a 6-digit OTP
+            generatedOtp = Math.floor(100000 + Math.random() * 900000);
+            // Display the OTP
+            document.getElementById('otpDisplay').innerText = `Your OTP is: ${generatedOtp}`;
+        }
+
+        function verifyOtp(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            const userOtp = document.getElementById('otpInput').value;
+            const resultElement = document.getElementById('verificationResult');
+
+            if (userOtp == generatedOtp) {
+                resultElement.innerText = 'OTP Verified Successfully!';
+                resultElement.style.color = 'green';
+            } else {
+                resultElement.innerText = 'Invalid OTP. Please try again.';
+                resultElement.style.color = 'red';
+            }
+        }
+    </script>
+</body>
+</html>

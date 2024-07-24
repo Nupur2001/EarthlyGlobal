@@ -1,0 +1,163 @@
+/* 
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.blogs .box-container .box {
+    background: var(--primary-color);
+}
+
+.blogs .box-container .box .image {
+    height: 42rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.blogs .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.blogs .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--white);
+    padding: 1rem 0;
+} */
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Multani Mitti Face Mask Remedies</h1>
+                <p>Multani mitti, also known as Fuller's earth, is a natural clay that has been used for centuries in
+                    skincare due to its excellent cleansing and oil-absorbing properties. Here are some effective face
+                    mask remedies using multani mitti:</p>
+
+
+                <!-- Add more mask remedies as needed -->
+
+                <!-- <h2><strong> Tips for Application:</strong></h2> -->
+                <h2><Strong>1. Basic Multani Mitti Mask</Strong></h2>
+
+                <h3><strong>Ingredients:</strong></h3>
+                <p>
+                    2 tablespoons of multani mitti<br>
+                    Rose water or plain water (enough to make a paste)<br>
+
+                <h3><strong>Instructions:</strong></h3>
+                <p>
+                    Mix the multani mitti and rose water (or water) to form a smooth paste.<br>
+                    Apply the paste evenly to your face, avoiding the sensitive eye area.<br>
+                    Leave it on for 15-20 minutes, or until it dries completely.<br>
+                    Rinse off with lukewarm water and pat dry.<br>
+                    Benefits: This mask helps in deep cleansing, removing excess oil, and improving skin texture.<br>
+                </p>
+
+                <h2><strong>2. Multani Mitti and Honey Mask</strong></h2>
+                <h3><strong>Ingredients:</strong></h3>
+                <p>
+                    1 tablespoon multani mitti<br>
+                    1 tablespoon honey<br>
+                    Rose water (optional, to adjust consistency)<br>
+                </p>
+
+
+                <h3><strong>Instructions:</strong></h3>
+                <p>
+                    Mix the multani mitti and honey to form a paste.<br>
+                    Add rose water if needed to get a spreadable consistency.<br>
+                    Apply the mask to your face and neck.<br>
+                    Leave it on for 15-20 minutes.<br>
+                    Rinse off with lukewarm water and pat dry.<br>
+                    Benefits: This mask helps moisturize while cleansing, making it suitable for dry or combination
+                    skin<br>
+                    types.
+                </p>
+
+
+                <h2><strong>3. Multani Mitti and Yogurt Mask</strong></h2>
+
+                <h3><strong>Ingredients:</strong></h3>
+                <p>
+                    2 tablespoons multani mitti<br>
+                    1 tablespoon yogurt<br>
+                    A few drops of lemon juice (optional, for oily skin)<br>
+                </p>
+
+
+                <h3><strong>Instructions:</strong></h3>
+                <p>
+                    Mix the multani mitti and yogurt to form a paste.<br>
+                    Add lemon juice if using, and mix well.<br>
+                    Apply the mask evenly on your face and neck.<br>
+                    Leave it on for 15-20 minutes.<br>
+                    Rinse off with lukewarm water and pat dry.<br>
+                    Benefits: This mask helps in balancing oil production and reducing acne, suitable for oily or
+                    acne-prone
+                    skin.<br>
+                <p>
+                </p>
+                <h2><strong>4. Multani Mitti and Turmeric Mask</strong></h2>
+                <h3><strong>Ingredients:</strong></h3>
+                <p>
+                1 tablespoon multani mitti <br>
+                1/2 teaspoon turmeric powder <br>
+                Rose water (or plain water) <br>
+                </p>
+
+
+                <h3><strong>Instructions:</strong></h3>
+                <p>
+                    Mix the multani mitti and turmeric powder. <br>
+                    Add enough rose water (or water) to form a paste. <br>
+                    Apply the mask evenly to your face and neck. <br>
+                    Leave it on for 15-20 minutes. <br>
+                    Rinse off gently with lukewarm water and pat dry. <br>
+                    Benefits: This mask helps in brightening the skin tone and reducing acne scars, thanks to turmeric's
+                    anti-inflammatory properties. <br>
+                </p>
+                <p>
+                <h3><strong>Tips for Application:</strong></h3>
+                 <p>
+                Always cleanse your face before applying any mask to remove dirt and makeup. <br>
+                Apply the mask using gentle, upward strokes and avoid the delicate eye area. <br>
+                Use these masks 1-2 times a week for best results. <br>
+                Moisturize your skin after using a multani mitti mask to keep it hydrated. <br>
+                These multani mitti face mask remedies can be tailored to suit different skin types and concerns,
+                providing
+                natural and effective skincare benefits. <br>
+                </p>
+
+            </div>
+
+        </div>

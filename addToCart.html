@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthly Global - Add to Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Help Button -->
+    <button class="btn Help"><a href="contact.html">Help</a></button>
+
+    <!-- Header -->
+    <section class="header">
+        <a href="index.html" class="logo">Earthly Global</a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="index.html">Home</a>
+            <a href="product.html">Our Product</a>
+            <a href="blog.html">Blogs</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <button class="btn signBtn"><a href="login.html">SignIn / SignUp</a></button>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+
+<!-- Add to Cart -->
+<div class="mainContainer">
+    <div class="singleCardContainer">
+        <!-- Product Section -->
+        <div class="productContainer">
+            <img src="Assets/Images/multani mitti product.png" alt="Product Image" class="product-image">
+            <p class="product-info">Pure & Natural Multani Mitti for radiant, glowing skin. Elevate your beauty routine with 100% organic, mineral-rich clay. Perfect for detoxifying and rejuvenating your complexion.</p>
+        </div>
+
+        <!-- Bill Section -->
+        <div class="billContainer">
+            <h2>Cart</h2>
+            <div class="bill-product">
+                <img src="Assets/Images/multani mitti product.png" alt="Product Image" class="bill-product-image">
+                <div class="quantity-control">
+                    <button class="add btn" onclick="addToCart()">+</button>
+                    <p id="bill-price">₹0</p>
+                    <button class="subtract btn" onclick="subtractFromCart()">-</button>
+                </div>
+            </div>
+            <div class="price-details">
+                <p id="price">Price: ₹0</p>
+                <p id="gst">GST (15%): ₹0</p>
+                <p id="total">Total Price: ₹0</p>
+                <button class="btn checkout"><a href="buyNow.html">Proceed to Checkout</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box box1">
+                <a href=""><img class="logo" src="Assets/Images/revised logo2.png" alt=""></a>
+                <p class="fPara">The company is renowned for its wide range of skincare and hair care products.</p>
+                <div class="share btns">
+                    <a href="" class="btn fab fa-facebook"></a>
+                    <a href="" class="btn fab fa-instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <div class="quick Links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blogs</a>
+                    <a href="product.html">Our Product</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact Us</h3>
+                <div class="Links">
+                    <p>Email us at globalearthly@gmail.com</p>
+                    <p>Call us at +91 8600157011</p>
+
+                    <!-- Policy Section -->
+                    <div class="policy">
+                        <a href="#" id="popupLinkTerms">Terms and Conditions</a>
+                        <a href="#" id="popupLinkRefund">Refund Policy</a>
+
+                        <!-- The pop-up dialog for Terms and Conditions -->
+                        <div id="popupTerms" class="popup">
+                            <div class="popup-content">
+                                <span class="close">&times;</span>
+                                <h2>Terms and Conditions</h2>
+                                <p>Content of Terms and Conditions...</p>
+                            </div>
+                        </div>
+
+                        <!-- The pop-up dialog for Refund Policy -->
+                        <div id="popupRefund" class="popup">
+                            <div class="popup-content">
+                                <span class="close">&times;</span>
+                                <h3>Refund Policy</h3>
+                                <p>Content of Refund Policy...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p class="credit">Copyright <i class="fa-regular fa-copyright"></i> E India Pvt. Ltd. 2023. All Rights Reserved</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
