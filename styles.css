@@ -15,15 +15,6 @@
     --border: .1rem solid #aaa;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     --btnhover: #B45A69;
-    --green1: #606f49;
-    --green2: #728359;
-    --green3: #849669;
-    --green4: #97a97c;
-    --green5: #a6b98b;
-    --green6: #b5c99a;
-    --green7: #c2d5aa;
-    --green8: #cfe1b9;
-    --green9: #dcebca;
     --textColor: #252B1C;
 
 
@@ -250,6 +241,10 @@ section {
 
 
 /* Why Our Product */
+/* .chooseProductParaFull , .buyProductParaFull{
+    display: none;
+
+} */
 .chooseContainer {
     margin-top: 4rem;
     border-radius: 2rem;
@@ -1064,24 +1059,18 @@ ol {
 }
 
 /* Add to Cart Page */
-
-
-/* Main Container Styling */
 .mainContainer {
     display: flex;
     gap: 2rem;
     justify-content: center;
     align-items: stretch;
-    /* Align containers to have equal height */
     margin: 3rem auto;
     width: 90%;
 }
 
-/* Cart Container Styling */
 .cartContainer,
 .billContainer {
     background-color: var(--white);
-    /* White background for containers */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
@@ -1090,16 +1079,13 @@ ol {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Ensure space is distributed evenly */
 }
 
-/* Hover Effect for Containers */
 .cartContainer:hover,
 .billContainer:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Product Container Styling */
 .productContainer {
     text-align: center;
 }
@@ -1116,7 +1102,6 @@ ol {
     color: var(--headingBrown);
 }
 
-/* Main Container Styling */
 .mainContainer {
     display: flex;
     justify-content: center;
@@ -1136,7 +1121,6 @@ ol {
     max-width: 1200px;
 }
 
-/* Product Details Section */
 .product-details {
     flex: 1;
     text-align: left;
@@ -1152,11 +1136,9 @@ ol {
     margin: 10px 0;
     font-size: 1.6rem;
     color: var(--headingBrown);
-    /* Heading color */
 }
 
-/* Add to Cart Button Styling */
-/* Single Card Container Styling */
+
 .singleCardContainer {
     display: flex;
     justify-content: space-between;
@@ -1170,7 +1152,6 @@ ol {
     margin: 3rem auto;
 }
 
-/* Product Section Styling */
 .productContainer {
     display: flex;
     flex-direction: column;
@@ -1189,7 +1170,6 @@ ol {
     font-size: 1.6rem;
 }
 
-/* Bill Section Styling */
 .billContainer {
     width: 50%;
 }
@@ -1253,7 +1233,6 @@ ol {
 .price-details .checkout {
     display: block;
     margin: 20px auto;
-    /* Center the button */
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
@@ -1273,6 +1252,7 @@ ol {
 /* Payment Portal */
 
 .cardContainer {
+    margin-left: 24rem;
     display: flex;
     width: 70%;
     /* Adjusted width */
@@ -1305,7 +1285,7 @@ ol {
 .methods div {
     padding: 7px 20px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 2rem;
 }
 
 .methods div:hover {
@@ -1445,7 +1425,7 @@ input {
     font-size: 1.8rem;
     color: #fff;
     background-color: #8a6d46;
-    padding: 0.8rem;
+    padding: 1rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -1458,6 +1438,70 @@ input {
     color: white;
 }
 
+
+/* Payment Portal 2 */
+.payment-portal {
+    background-color: var(--light-bg);
+    padding: 5rem 1%;
+}
+
+.payment-portal .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-portal h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.payment-portal .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.payment-portal .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--headingBrown);
+}
+
+.payment-portal .form-group input,
+.payment-portal .form-group select,
+.payment-portal .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--mocha);
+    font-size: 1.6rem;
+}
+
+.payment-portal .form-group textarea {
+    resize: vertical;
+}
+
+.payment-portal .btn {
+    display: block;
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.payment-portal .btn:hover {
+    background: var(--mocha);
+}
 
 /* Footer */
 
@@ -1977,6 +2021,23 @@ button:hover {
 
     .inner-container .abtus-text .btns .btn {
         padding: 1rem 2rem;
+    }
+
+    .cardContainer {
+        margin-top: 4rem;
+        width: 80%;
+    }
+
+    .card-details {
+        font-size: 2rem;
+    }
+
+    .cardContainer .btn {
+        padding: 3rem;
+    }
+
+    input {
+        font-size: 2rem;
     }
 
     /* Footer Section */
@@ -2540,7 +2601,7 @@ button:hover {
     }
 
     .product-div .product-div-left .img-container .img-display {
-        margin-left: 9rem !important;
+        margin-left: 12rem !important;
         width: 30rem;
         height: 30rem;
     }
@@ -2578,6 +2639,19 @@ button:hover {
         background-color: var(--white);
         border-radius: 10px;
         box-shadow: 1px 7px 27px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+        margin: 3rem;
+    }
+
+    .card img {
+        border-radius: 1rem;
+        margin-top: 3rem;
+        /* display: flex; */
+        margin-left: 11rem !important;
+        width: 25rem !important;
+        height: 25rem !important;
     }
 }
 
@@ -2701,8 +2775,9 @@ button:hover {
     }
 
     .product-div .product-div-left .img-container .img-display {
-        margin-left: 9rem !important;
+        margin-left: 5rem !important;
     }
+
     .product-div {
         grid-template-columns: 1fr;
         padding: 1rem;
@@ -2733,6 +2808,18 @@ button:hover {
 
     .product-description {
         font-size: 1rem;
+    }
+    .card {
+        margin: 3rem;
+    }
+
+    .card img {
+        border-radius: 1rem;
+        margin-top: 3rem;
+        /* display: flex; */
+        margin-left: 11rem !important;
+        width: 25rem !important;
+        height: 25rem !important;
     }
 
 }
@@ -2796,7 +2883,7 @@ button:hover {
 
     .chooseContainer .btn {
         margin-top: 3rem;
-        margin-left: 20.5rem;
+        margin-left: 3.5rem;
     }
 
     .chooseContainer p,
@@ -2840,6 +2927,7 @@ button:hover {
     .footer .logo {
         height: 12rem;
     }
+
 }
 
 /* @media only screen and (min-width: 375px) {
@@ -2868,7 +2956,6 @@ button:hover {
     }
 
 
-
     .card {
         margin: 3rem;
     }
@@ -2889,7 +2976,7 @@ button:hover {
     .buyProductContainer p {
         margin-top: -7rem;
         font-size: 2rem;
-        padding: 5rem;
+        padding: 0rem;
     }
 
     .buyProductContainer .btn {
@@ -2907,7 +2994,8 @@ button:hover {
         max-width: 123rem;
         color: var(--carob);
         padding-top: 6rem;
-        margin: 3rem;
+        margin: 0rem;
+
     }
 
     footer {
@@ -2929,12 +3017,14 @@ button:hover {
         font-size: 2.5rem;
     }
 
-    .chooseProductContainer p,
+
+
+    /* .chooseProductContainer p,
     .buyProductContainer p {
         margin-top: -7rem;
         font-size: 2rem;
         padding: 5rem;
-    }
+    } */
 
 
     /* .product-div .product-div-left {
@@ -2969,10 +3059,12 @@ button:hover {
     .card img {
         border-radius: 1rem;
         margin-top: 3rem;
-        margin-left: 5rem;
+        /* display: flex; */
+        margin-left: 6rem !important;
         width: 19rem;
         height: 19rem;
     }
+
     /* .product-div .product-div-left .img-container .img-display {
         margin-left: 5rem !important;
     } */
@@ -2980,6 +3072,15 @@ button:hover {
 }
 
 @media only screen and (max-width: 320px) {
+    .card img {
+        border-radius: 1rem;
+        margin-top: 3rem;
+        display: flex;
+        /* margin-left: 5rem; */
+        width: 19rem;
+        height: 19rem;
+    }
+    
     .Help {
         right: 1rem;
         top: 71.5rem;
@@ -3092,11 +3193,12 @@ button:hover {
 
     .chooseContainer .btn {
         font-size: 2.5rem;
-        margin-top: -2rem;
+        margin-top: 1rem;
         margin-left: 0rem;
     }
 
     .buyProductContainer .btn {
+        margin-top: 1rem;
         font-size: 2.5rem;
     }
 
@@ -3153,14 +3255,35 @@ button:hover {
         font-size: 1.5rem;
     }
 
-    .product-div .product-div-left {
-        margin-left: -8rem;
+    .card img {
+        border-radius: 1rem;
+        margin-top: 2rem;
+        margin-left: 4rem;
+        width: 30rem;
+        height: 26rem;
     }
 
-    .hover-container div img {
+    .card-content h3 {
+        font-size: 16px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+
+    .newsletter {
+        height: 30rem;
+    }
+
+
+    .product-div .product-div-left {
+        margin-left: 0rem;
+    }
+
+    /* .hover-container div img {
         width: 8rem;
         cursor: pointer;
-    }
+    } */
 
     .main-wrapper .container {
         max-width: 100%;
@@ -3173,8 +3296,8 @@ button:hover {
     }
 
     .main-wrapper .product-div .product-div-right .product-description {
-        margin: 1rem -3rem;
-        font-size: 2rem;
+        margin: 1rem 0rem;
+        font-size: 2rem !important;
     }
 
     .img-container img {
@@ -3185,21 +3308,6 @@ button:hover {
         font-size: 4rem;
     }
 
-    .main-wrapper .product-div .product-div-right .product-description {
-        margin: 1rem -3rem;
-        font-size: 2.2rem !important;
-    }
-
-
-    .product-div-right .btn {
-        margin-left: 5rem;
-        font-size: 2.5rem;
-    }
-
-    .product-div {
-        grid-template-columns: 1fr;
-    }
-
     .img-container {
         margin-left: 0;
     }
@@ -3208,47 +3316,66 @@ button:hover {
         margin-left: 18.5rem;
     }
 
-    .card-content h3 {
-        font-size: 16px;
-    }
-
-    .card-content p {
-        font-size: 12px;
-    }
-
-    .newsletter {
-        height: 22rem;
-    }
-
-    /* .btn {
-        padding: 8px 16px;
-        font-size: 12px;
-    } */
-
-    .card img {
-        border-radius: 1rem;
-        margin-top: 2rem;
-        margin-left: 4rem;
-        width: 30rem;
-        height: 26rem;
+    .hover-container div img {
+        width: 45px;
+        cursor: pointer;
     }
 
     .product-div .product-div-left .img-container .img-display {
-        width: 30rem;
-        height: 30rem;
-        margin-left: 26rem !important;
+        margin-bottom: 1rem;
+        height: 20rem;
+        width: 20rem;
+        margin-left: 14rem !important;
     }
-    .product-div-right {
-        text-align: center;
+
+    .product-div-right .btn {
+        margin-left: 5rem;
+        font-size: 2.5rem;
     }
-    .product-div .product-div-left .img-container .img-display {
-        margin-left: 26rem !important;
+
+    .product-div {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hover-container {
+        flex-direction: flex;
+        margin: 0;
+    }
+
+    .product-name {
+        font-size: 3.5rem;
+        margin: 0;
+    }
+
+    .product-price,
+    .product-weight {
+        font-size: 2rem;
+    }
+    .mobileContent{
+        display: block;
+    }
+    .desktopContent {
+        display: none;
     }
 
     .bill-product-image {
         width: 62px;
     }
+
 }
+
+/* .buyProductContainer {
+    margin-top: -3rem;
+} */
+
 
 
 /* @media only screen and (min-width: 1024px) {
