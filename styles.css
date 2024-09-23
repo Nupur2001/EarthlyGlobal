@@ -1580,12 +1580,12 @@ input {
 
 .footer .box-container .box .Links a:hover {
     text-decoration: none;
-    color: var(--btnhover);
+    color: var(--headingBrown);
 }
 
 .footer .box-container .box .Links p:hover {
     text-decoration: none;
-    color: var(--btnhover);
+    color: var(--headingBrown);
 }
 
 .footer p {
